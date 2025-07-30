@@ -1,6 +1,5 @@
 package com.techlab.proyecto_final.entity;
 
-
 import jakarta.persistence.*;
 
 @Entity
@@ -9,6 +8,7 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nombre;
     private String imagen;
     private Double precio;
@@ -17,8 +17,22 @@ public class Producto {
     private String descripcion;
     private Double discount = 0.0; // porcentaje
 
-    // Getters y Setters
+    //  Constructor vacío para que funcione
+    public Producto() {}
 
+    //  Constructor con todos los campos (usado para precargar productos)
+    public Producto(Long id, String nombre, String imagen, Double precio, Integer stock, String categoria, String descripcion, Double discount) {
+        this.id = id;
+        this.nombre = nombre;
+        this.imagen = imagen;
+        this.precio = precio;
+        this.stock = stock;
+        this.categoria = categoria;
+        this.descripcion = descripcion;
+        this.discount = discount;
+    }
+
+    //  Getters y Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
