@@ -42,6 +42,27 @@ public class ProductoController {
         return ResponseEntity.ok(productService.obtenerPorId(id));
     }
 
+    // --- METODO NUEVO: Buscar producto y mostrar precio ---
+    @GetMapping("/find/{productId}/price")
+    public ResponseEntity<String> buscarProductoPrecioPorId(@PathVariable Long productId) {
+        ProductResponseDTO product = productService.obtenerPorId(productId);
+        return ResponseEntity.ok("El precio para el producto '" + product.getNombre() + "' es: $" + product.getPrecio());
+    }
+    // --- FIN DEL MTODO NUEVO ---
+
+    // --- METODO INICIA: Buscar por nombre  y orden ---
+    @GetMapping("/buscar")
+    public ResponseEntity<List<ProductResponseDTO>> buscarProductosPorNombreYOrden(
+            @RequestParam String nombre,
+            @RequestParam(defaultValue = "nombre") String campo,
+            @RequestParam(defaultValue = "asc") String orden) {
+
+        List<ProductResponseDTO> productos = productService.buscarPorNombreYOrden(nombre, campo, orden);
+        return ResponseEntity.ok(productos);
+    }
+// --- METODO FINALIZA ---
+
+
     @PutMapping("/{id}")
     public ResponseEntity<ProductResponseDTO> actualizar(@PathVariable Long id, @RequestBody ProductRequestDTO producto) {
         return ResponseEntity.ok(productService.actualizarProducto(id, producto));

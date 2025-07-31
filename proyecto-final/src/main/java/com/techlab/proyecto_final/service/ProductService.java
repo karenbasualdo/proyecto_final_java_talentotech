@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Comparator;
 
 @Service
 public class ProductService {
@@ -121,4 +122,27 @@ public class ProductService {
         p.setDiscount(dto.getDiscount());
         return p;
     }
+
+    // --- METODO INICIA: buscar por nombre con orden
+    public List<ProductResponseDTO> buscarPorNombreYOrden(String nombre, String campo, String orden) {
+        Comparator<Producto> comparator;
+
+        if ("precio".equalsIgnoreCase(campo)) {
+            comparator = Comparator.comparing(Producto::getPrecio);
+        } else {
+            comparator = Comparator.comparing(Producto::getNombre, String.CASE_INSENSITIVE_ORDER);
+        }
+
+        if ("desc".equalsIgnoreCase(orden)) {
+            comparator = comparator.reversed();
+        }
+
+        return productoRepository.findAll().stream()
+                .filter(p -> p.getNombre().toLowerCase().contains(nombre.toLowerCase()))
+                .sorted(comparator)
+                .map(this::toResponseDTO)
+                .collect(Collectors.toList());
+    }
+// --- METODO FINALIZA ---
+
 }

@@ -1,0 +1,748 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_c954894357f94e87ba8b488c4ccfd34a
+  created: 1753638073613
+  modified: 1753638073613
+  description: ""
+collection:
+  - name: ProyectoFinal
+    meta:
+      id: fld_19da4fc5a92f49008acbd639d90a7e4a
+      created: 1753730358706
+      modified: 1753730629789
+      sortKey: -1753730358706
+      description: ""
+    children:
+      - name: Request body Productos
+        meta:
+          id: fld_6961e52e5c6047f1ab78c713f758c89c
+          created: 1753730382704
+          modified: 1753923118374
+          sortKey: -1753730386442
+          description: ""
+        children:
+          - url: http://localhost:8081/productos/lote
+            name: Request (crear) lista Productos
+            meta:
+              id: req_3beef263d47b4f40b552a132c15f9fc0
+              created: 1753731385304
+              modified: 1753924643792
+              isPrivate: false
+              description: ""
+              sortKey: -1753731500133
+            method: POST
+            body:
+              mimeType: application/json
+              text: >
+                [
+                  { "id":1,
+                    "nombre": "Pan sin TACC lactal",
+                    "imagen": "",
+                    "precio": 2200,
+                    "stock": 10,
+                    "categoria": "Panificados",
+                    "descripcion": "Pan lactal sin gluten",
+                    "discount": 5.0
+                  },
+                  { "id":2,
+                    "nombre": "Galletitas dulces sin TACC",
+                    "imagen": "",
+                    "precio": 1600,
+                    "stock": 5,
+                    "categoria": "Galletitas",
+                    "descripcion": "Galletitas de vainilla libres     de gluten",
+                    "discount": 25.0
+                  },
+                  { "id":3,
+                    "nombre": "Fideos de arroz sin TACC",
+                    "imagen": "",
+                    "precio": 1900,
+                    "stock": 8,
+                    "categoria": "Pastas",
+                    "descripcion": "Fideos libres de gluten hechos      a base de arroz",
+                    "discount": 0.0
+                  },
+                  { "id":4,
+                    "nombre": "Premezcla sin TACC",
+                    "imagen": "",
+                    "precio": 2500,
+                    "stock": 15,
+                    "categoria": "Harinas",
+                    "descripcion": "Mezcla apta para panificados        sin gluten",
+                    "discount": 0.0
+                  },
+                  { "id":5,
+                    "nombre": "Tapa de empanadas sin TACC",
+                    "imagen": "",
+                    "precio": 1800,
+                    "stock": 20,
+                    "categoria": "Panificados",
+                    "descripcion": "Tapas para empanadas sin            gluten",
+                    "discount": 0.0
+                  },
+                  { "id":6,
+                    "nombre": "Bizcochuelo de vainilla sin TACC",
+                    "imagen": "",
+                    "precio": 2100,
+                    "stock": 10,
+                    "categoria": "Repostería",
+                    "descripcion": "Bizcochuelo instantáneo sin        gluten",
+                    "discount": 0.0
+                  },
+                  { "id":7,
+                    "nombre": "Alfajores sin TACC",
+                    "imagen": "",
+                    "precio": 2300,
+                    "stock": 12,
+                    "categoria": "Dulces",
+                    "descripcion": "Alfajores de maicena sin            gluten",
+                    "discount": 0.0
+                  },
+                  { "id":8,
+                    "nombre": "Galletitas saladas sin TACC",
+                    "imagen": "",
+                    "precio": 1700,
+                    "stock": 9,
+                    "categoria": "Galletitas",
+                    "descripcion": "Galletitas tipo crackers sin        gluten",
+                    "discount": 10.0
+                  },
+                  { "id":9,
+                    "nombre": "Cereales sin TACC",
+                    "imagen": "",
+                    "precio": 2600,
+                    "stock": 7,
+                    "categoria": "Desayuno",
+                    "descripcion": "Cereal de maíz sin gluten",
+                    "discount": 0.0
+                  },
+                  { "id":10,
+                    "nombre": "Pan rallado sin TACC",
+                    "imagen": "",
+                    "precio": 1500,
+                    "stock": 14,
+                    "categoria": "Panificados",
+                    "descripcion": "Rebozador sin gluten",
+                    "discount": 0.0
+                  },
+                  { "id":11,
+                    "nombre": "Snacks de arroz sin TACC",
+                    "imagen": "",
+                    "precio": 1400,
+                    "stock": 18,
+                    "categoria": "Snacks",
+                    "descripcion": "Snacks saludables libres de        gluten",
+                    "discount": 0.0
+                  },
+                  { "id":12,
+                    "nombre": "Pizza prelista sin TACC",
+                    "imagen": "",
+                    "precio": 2800,
+                    "stock": 6,
+                    "categoria": "Comidas listas",
+                    "descripcion": "Base de pizza lista para            hornear sin gluten",
+                    "discount": 15.0
+                  },
+                  { "id":13,
+                    "nombre": "Tarta prelista sin TACC",
+                    "imagen": "",
+                    "precio": 2900,
+                    "stock": 6,
+                    "categoria": "Comidas listas",
+                    "descripcion": "Tarta de verduras lista para        calentar sin gluten",
+                    "discount": 0.0
+                  },
+                  { "id":14,
+                    "nombre": "Galletitas de avena sin TACC",
+                    "imagen": "",
+                    "precio": 1600,
+                    "stock": 5,
+                    "categoria": "Galletitas",
+                    "descripcion": "Galletitas dulces con avena        certificada sin gluten",
+                    "discount": 0.0
+                  },
+                  { "id":15,
+                    "nombre": "Muffins sin TACC",
+                    "imagen": "",
+                    "precio": 2700,
+                    "stock": 7,
+                    "categoria": "Repostería",
+                    "descripcion": "Muffins esponjosos sin gluten",
+                    "discount": 35.0
+                  },
+                  { "id":16,
+                    "nombre": "Pan dulce sin TACC",
+                    "imagen": "",
+                    "precio": 3400,
+                    "stock": 5,
+                    "categoria": "Repostería",
+                    "descripcion": "Pan dulce apto para celíacos",
+                    "discount": 0.0
+                  },
+                  { "id":17,
+                    "nombre": "Harina de arroz sin TACC",
+                    "imagen": "",
+                    "precio": 2000,
+                    "stock": 15,
+                    "categoria": "Harinas",
+                    "descripcion": "Harina natural de arroz libre de gluten",
+                    "discount": 0.0
+                  },
+                  { "id":18,
+                    "nombre": "Tostadas de arroz sin TACC",
+                    "imagen": "",
+                    "precio": 1500,
+                    "stock": 20,
+                    "categoria": "Snacks",
+                    "descripcion": "Tostadas crujientes de arroz",
+                    "discount": 20.0
+                  },
+                  { "id":19,
+                    "nombre": "Budín sin TACC",
+                    "imagen": "",
+                    "precio": 2900,
+                    "stock": 10,
+                    "categoria": "Repostería",
+                    "descripcion": "Budín de limón libre de gluten",
+                    "discount": 0.0
+                  },
+                  { "id":20,
+                    "nombre": "Empanadas congeladas sin TACC",
+                    "imagen": "",
+                    "precio": 3000,
+                    "stock": 8,
+                    "categoria": "Comidas listas",
+                    "descripcion": "Empanadas congeladas listas para hornear",
+                    "discount": 0.0
+                  },
+                  { "id":21,
+                    "nombre": "Helado sin TACC",
+                    "imagen": "",
+                    "precio": 3200,
+                    "stock": 9,
+                    "categoria": "Postres",
+                    "descripcion": "Helado artesanal apto para celíacos",
+                    "discount": 40.0
+                  },
+                  { "id":22,
+                    "nombre": "Tortillas congeladas sin TACC",
+                    "imagen": "",
+                    "precio": 2500,
+                    "stock": 10,
+                    "categoria": "Comidas listas",
+                    "descripcion": "Tortillas sin gluten listas para calentar",
+                    "discount": 0.0
+                  }
+                ]
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos
+            name: Request GET todos los productos
+            meta:
+              id: req_70c5df5fc78c4dd893c737dc3480e347
+              created: 1753846588026
+              modified: 1753916776777
+              isPrivate: false
+              description: ""
+              sortKey: -1753846588026
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/3
+            name: Request GET(obtener) producto por id 3
+            meta:
+              id: req_93e5e580f281489abf0415821fe178fe
+              created: 1753851931340
+              modified: 1753916781823
+              isPrivate: false
+              description: ""
+              sortKey: -1753851931340
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/5
+            name: Request PUT(actualizar) producto 5
+            meta:
+              id: req_a9337fef3f314cac97a210fd90a4052d
+              created: 1753852091803
+              modified: 1753923205883
+              isPrivate: false
+              description: ""
+              sortKey: -1753852091803
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nombre": "Fideos sin TACC de maíz",
+                  "imagen": "",
+                  "precio": 2000,
+                  "stock": 10,
+                  "categoria": "Pastas",
+                  "descripcion": "Fideos sin gluten mejorados",
+                  "discount": 5.0
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/20
+            name: Request DELETE producto 20
+            meta:
+              id: req_91781f5fdfa64a7597acaf3575a39e9f
+              created: 1753852457016
+              modified: 1753924729895
+              isPrivate: false
+              description: ""
+              sortKey: -1753852457016
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/find/12/price
+            name: " Request  Buscar producto y mostrar precio por ID 12"
+            meta:
+              id: req_4420ee5cf0e04a85b141bf6f2f1455b6
+              created: 1753916796731
+              modified: 1753921839112
+              isPrivate: false
+              description: ""
+              sortKey: -1753916796731
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/buscar?nombre=pan
+            name: Request GET Buscar productos que contenga la palabra "pan "
+            meta:
+              id: req_3ed1f7ca111f45eb98760da34cb9b0e5
+              created: 1753921910885
+              modified: 1753922408730
+              isPrivate: false
+              description: ""
+              sortKey: -1753921910885
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/buscar?nombre=tostada&campo=precio&orden=desc
+            name: Request Busca por nombre tostada ordenada por precio descendente
+            meta:
+              id: req_d8b60bd4d03b43669ad351e46b8662a4
+              created: 1753922429590
+              modified: 1753923471988
+              isPrivate: false
+              description: ""
+              sortKey: -1753922429590
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/13
+            name: Request PUT producto 13(tostadas dulce)
+            meta:
+              id: req_e7841b113f8e42a8a0fe28da86fe3c18
+              created: 1753923121564
+              modified: 1753923438357
+              isPrivate: false
+              description: ""
+              sortKey: -1753923121564
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nombre": "Tostadas dulce sin TACC",
+                  "imagen": "",
+                  "precio": 1000,
+                  "stock": 45,
+                  "categoria": "Snacks",
+                  "descripcion": "Tostadas dulces crujientes de arroz",
+                  "discount": 5.0
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/lote
+            name: Request CREAR  varios(lista) -NUEVOS productos
+            meta:
+              id: req_3fbb50d5fc714bcc8126534f6104370b
+              created: 1753923511970
+              modified: 1753924658070
+              isPrivate: false
+              description: ""
+              sortKey: -1753923511970
+            method: POST
+            body:
+              mimeType: application/json
+              text: >+
+                [
+                  {
+                    "id": 23,
+                    "nombre": "Tostadas dulces sin TACC",
+                    "imagen": "",
+                    "precio": 1900,
+                    "stock": 12,
+                    "categoria": "Desayuno",
+                    "descripcion": "Tostadas dulces libres de gluten",
+                    "discount": 10.0
+                  },
+                  {
+                    "id": 24,
+                    "nombre": "Brownies sin TACC",
+                    "imagen": "",
+                    "precio": 2500,
+                    "stock": 7,
+                    "categoria": "Repostería",
+                    "descripcion": "Brownies de chocolate aptos para celíacos",
+                    "discount": 15.0
+                  },
+                  {
+                    "id": 25,
+                    "nombre": "Mini muffins sin TACC",
+                    "imagen": "",
+                    "precio": 1800,
+                    "stock": 10,
+                    "categoria": "Repostería",
+                    "descripcion": "Muffins individuales sin gluten",
+                    "discount": 5.0
+                  },
+                  {
+                    "id": 26,
+                    "nombre": "Cookies sin TACC con chips de chocolate",
+                    "imagen": "",
+                    "precio": 2000,
+                    "stock": 9,
+                    "categoria": "Galletitas",
+                    "descripcion": "Galletitas crocantes con chips sin gluten",
+                    "discount": 20.0
+                  },
+                  {
+                    "id": 27,
+                    "nombre": "Premezcla para bizcochuelo sin TACC",
+                    "imagen": "",
+                    "precio": 2300,
+                    "stock": 14,
+                    "categoria": "Harinas",
+                    "descripcion": "Mezcla para bizcochuelo sin gluten",
+                    "discount": 0.0
+                  },
+                  {
+                    "id": 28,
+                    "nombre": "Pionono sin TACC",
+                    "imagen": "",
+                    "precio": 2700,
+                    "stock": 6,
+                    "categoria": "Repostería",
+                    "descripcion": "Masa de pionono lista para rellenar sin gluten",
+                    "discount": 10.0
+                  },
+                  {
+                    "id": 29,
+                    "nombre": "Medialunas sin TACC",
+                    "imagen": "",
+                    "precio": 3100,
+                    "stock": 8,
+                    "categoria": "Panificados",
+                    "descripcion": "Medialunas dulces libres de gluten",
+                    "discount": 5.0
+                  },
+                  {
+                    "id": 30,
+                    "nombre": "Scones sin TACC",
+                    "imagen": "",
+                    "precio": 1950,
+                    "stock": 10,
+                    "categoria": "Panificados",
+                    "descripcion": "Scones esponjosos aptos para celíacos",
+                    "discount": 0.0
+                  },
+                  {
+                    "id": 31,
+                    "nombre": "Tostadas saladas sin TACC",
+                    "imagen": "",
+                    "precio": 1700,
+                    "stock": 20,
+                    "categoria": "Snacks",
+                    "descripcion": "Tostadas crujientes saladas sin gluten",
+                    "discount": 0.0
+                  },
+                  {
+                    "id": 32,
+                    "nombre": "Galletitas de limón sin TACC",
+                    "imagen": "",
+                    "precio": 1650,
+                    "stock": 12,
+                    "categoria": "Galletitas",
+                    "descripcion": "Galletitas sabor limón sin TACC",
+                    "discount": 15.0
+                  },
+                  {
+                    "id": 33,
+                    "nombre": "Pastas frescas sin TACC",
+                    "imagen": "",
+                    "precio": 2900,
+                    "stock": 7,
+                    "categoria": "Pastas",
+                    "descripcion": "Tallarines frescos sin gluten listos para hervir",
+                    "discount": 5.0
+                  },
+                  {
+                    "id": 34,
+                    "nombre": "Budín de chocolate sin TACC",
+                    "imagen": "",
+                    "precio": 2600,
+                    "stock": 11,
+                    "categoria": "Repostería",
+                    "descripcion": "Budín esponjoso sabor chocolate",
+                    "discount": 10.0
+                  },
+                  {
+                    "id": 35,
+                    "nombre": "Tostadas integrales sin TACC",
+                    "imagen": "",
+                    "precio": 1800,
+                    "stock": 15,
+                    "categoria": "Desayuno",
+                    "descripcion": "Tostadas integrales aptas para celíacos",
+                    "discount": 0.0
+                  },
+                  {
+                    "id": 36,
+                    "nombre": "Pan de molde sin TACC",
+                    "imagen": "",
+                    "precio": 2400,
+                    "stock": 10,
+                    "categoria": "Panificados",
+                    "descripcion": "Pan de molde blanco sin gluten",
+                    "discount": 5.0
+                  },
+                  {
+                    "id": 37,
+                    "nombre": "Mix de cereales sin TACC",
+                    "imagen": "",
+                    "precio": 2700,
+                    "stock": 13,
+                    "categoria": "Desayuno",
+                    "descripcion": "Cereales naturales sin gluten",
+                    "discount": 0.0
+                  }
+                ]
+
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos
+            name: Request CREA un SOLO producto
+            meta:
+              id: req_a76fc4dc21d845b096527adb6e65d1c9
+              created: 1753923849422
+              modified: 1753924582079
+              isPrivate: false
+              description: ""
+              sortKey: -1753923849422
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "nombre": "Brownie sin TACC",
+                  "imagen": "",
+                  "precio": 2400,
+                  "stock": 10,
+                  "categoria": "Repostería",
+                  "descripcion": "Brownie húmedo libre de gluten",
+                  "discount": 0.0
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/29
+            name: Request DELETE producto 29
+            meta:
+              id: req_e6d106fc0ee3400f8a7c26788784aab5
+              created: 1753924720191
+              modified: 1753924913167
+              isPrivate: false
+              description: ""
+              sortKey: -1753924720191
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/buscar?nombre=pan&campo=nombre&orden=desc
+            name: Request Buscar por nombre "pan" ordenado alfabéticamente desc
+            meta:
+              id: req_3ca72639d3f24f9c8ac77805a040ec3b
+              created: 1753925049753
+              modified: 1753925088753
+              isPrivate: false
+              description: ""
+              sortKey: -1753925049753
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8081/productos/buscar?nombre=pan&campo=precio&orden=asc
+            name: Request Buscar por nombre "pan" ordenado por precio ascendente
+            meta:
+              id: req_3db32bfcc2dd4c5da16d14de8b9b649b
+              created: 1753925155407
+              modified: 1753925188227
+              isPrivate: false
+              description: ""
+              sortKey: -1753925155407
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.3.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_b824d531134b4f79b28f3ca14e86dcc0
+          created: 1753730413368
+          modified: 1753730416142
+          sortKey: -1753730386342
+          description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_cfe1b886d794dfdd9109860aa381cd6697160a6f
+    created: 1753638073654
+    modified: 1753638073654
+environments:
+  name: Base Environment
+  meta:
+    id: env_cfe1b886d794dfdd9109860aa381cd6697160a6f
+    created: 1753638073638
+    modified: 1753638073638
+    isPrivate: false
